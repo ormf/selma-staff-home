@@ -40,3 +40,5 @@ sudo chmod 440 /etc/makepkg.confx
 # sudo echo KEYMAP=de-latin1-nodeadkeys > /etc/vconsole.conf
 localectl --no-convert set-keymap de-latin1-nodeadkeys
 cd /home/admin/work/install/aur/adwaita-qt-git && makepkg -si --noconfirm && cd /home/admin
+sudo mv /home/gast/to-home/* /home/gast/
+
