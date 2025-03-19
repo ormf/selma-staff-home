@@ -34,8 +34,11 @@ sudo locale-gen
 sudo cp locale.conf /etc/
 sudo chown root:root locale.conf
 sudo chmod 644 /etc/locale.conf
+sudo cp makepkg.conf /etc/
+sudo chown root:root /etc/makepkg.conf
+sudo chmod 440 /etc/makepkg.confx
 # sudo echo KEYMAP=de-latin1-nodeadkeys > /etc/vconsole.conf
 localectl --no-convert set-keymap de-latin1-nodeadkeys
-cd /home/admin/work/install/aur/adwaita-qt-git && makepkg -si && cd ~
+cd /home/admin/work/install/aur/adwaita-qt-git && makepkg -si --noconfirm && cd ~
 cp /home/admin/work/install/scripts/quicklisp.lisp /tmp/
 sudo -l gast sbcl --load /tmp/quicklisp.lisp
