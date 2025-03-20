@@ -3,6 +3,7 @@
 # sudo mkdir -p /usr/local/lib/systemd/user-environment-generators
 sudo ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 cd work/install/scripts
+sudo sh user1-home.sh
 # sudo cp environment /etc/
 # sudo chown root.root /etc/environment
 # sudo chmod 644 /etc/environment
@@ -27,8 +28,4 @@ sudo locale-gen
 # sudo echo KEYMAP=de-latin1-nodeadkeys > /etc/vconsole.conf
 localectl --no-convert set-keymap de-latin1-nodeadkeys
 cd /home/admin/work/install/aur/adwaita-qt-git && makepkg -si --noconfirm && cd /home/admin
-sudo mv /home/gast/user1-home/* /home/gast/
-sudo mv /home/gast/user1-home/\.* /home/gast/
-sudo rmdir /home/gast/user1-home 
-sudo mv /home/gast/local-projects /home/gast/quicklisp/
 
