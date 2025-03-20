@@ -1,0 +1,1 @@
+tar cvf global.tgz etc/environment etc/security/limits.conf etc/locale.conf etc/locale.gen etc/makepkg.conf etc/sudoers usr/share/applications/pd.desktop var/lib/AccountsService/users/gast usr/local/bin/pulse-jack-post-start.sh usr/local/bin/pulse-jack-pre-start.sh usr/local/bin/pulse-jack-post-start.sh
