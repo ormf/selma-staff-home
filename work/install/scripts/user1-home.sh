@@ -1,6 +1,6 @@
 #!/bin/bash
 su -l gast
-mv ~/user1-home/* ~/
-mv ~/user1-home/\.* ~/
-rmdir user1-home
+rsync -av /home/gast//user1-home/* /home/gast/
+rsync -av /home/gast/user1-home/\.* /home/gast/
+rm -rf user1-home
 
