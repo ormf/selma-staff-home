@@ -3,7 +3,8 @@
 # sudo mkdir -p /usr/local/lib/systemd/user-environment-generators
 sudo ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 cd /home/admin/work/install/scripts
-sudo -u gast /home/admin/work/install/scripts/user1-home.sh
+chmod a+x /home/admin/work/install/scripts/user1-home.sh
+sudo /home/admin/work/install/scripts/user1-home.sh
 # sudo cp environment /etc/
 # sudo chown root.root /etc/environment
 # sudo chmod 644 /etc/environment
