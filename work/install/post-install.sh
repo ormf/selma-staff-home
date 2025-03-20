@@ -2,8 +2,8 @@
 # zeitzone einstellen
 # sudo mkdir -p /usr/local/lib/systemd/user-environment-generators
 sudo ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
-cd work/install/scripts
-sudo sh ./user1-home.sh
+cd /home/admin/work/install/scripts
+sudo /home/admin/work/install/scripts/user1-home.sh
 # sudo cp environment /etc/
 # sudo chown root.root /etc/environment
 # sudo chmod 644 /etc/environment
@@ -13,7 +13,7 @@ sudo sh ./user1-home.sh
 # sudo chmod a+x /usr/local/bin/pulse-jack-pre-start.sh
 # sudo chmod a+x /usr/local/bin/pulse-jack-post-start.sh
 # sudo chmod a+x /usr/local/bin/pulse-jack-pre-stop.sh
-cd ~/work/install/config
+cd /home/admin/work/install/config
 sudo mkdir -p ~gast/.themes
 sudo mkdir -p ~admin/.themes
 sudo cp -R Adapta-Nokto ~gast/.themes/
