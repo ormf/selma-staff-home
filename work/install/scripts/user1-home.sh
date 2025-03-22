@@ -8,6 +8,7 @@ sudo -u gast git clone https://github.com/ormf/cl-orgel-gui.git /home/gast/local
 sudo -u gast rsync -av /home/gast//user1-home/* /home/gast/
 sudo -u gast rsync -av /home/gast/user1-home/\.* /home/gast/
 sudo -u gast mv /home/gast/local-projects /home/gast/quicklisp/
-# sudo -u gast rm -rf /home/gast/user1-home
+sudo -u gast rm -rf /home/gast/user1-home
+sudo -u gast systemctl enable NetworkManager.service
 # exit
 
