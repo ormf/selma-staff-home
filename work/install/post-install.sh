@@ -28,5 +28,8 @@ sudo timedatectl set-local-rtc 0
 sudo locale-gen
 # sudo echo KEYMAP=de-latin1-nodeadkeys > /etc/vconsole.conf
 localectl --no-convert set-keymap de-latin1-nodeadkeys
+sudo pacman -Rdd libwireplumber pipewire-audio pipewire-pulse pipewire-session-manager qpwgraph wireplumber
+sudo pacman -S pulseaudio pulseaudio-alsa pulseaudio-jack pulseaudio-zeroconf
 cd /home/admin/work/install/aur/adwaita-qt-git && makepkg -si --noconfirm && cd /home/admin
-
+cd /home/admin/work/install/aur/ && git clone https://aur.archlinux.org/cpupower-gui-git.git
+cd cpupower-gui-git && makepkg -si --noconfirm && cd /home/admin
